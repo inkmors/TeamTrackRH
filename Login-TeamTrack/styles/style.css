@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, rgb(108, 116, 156) 0%, rgb(83, 102, 128) 100%);
+    background-repeat: no-repeat;
+}
+
+.div-register-login{
+    width: 25rem;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.screen-login{
+    display: block;
+}
+
+.screen-register{
+    display: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+
+    gap: 2rem;
+    padding: 1em 1em;
+    padding-bottom: 3rem;
+    padding-right: 1.5rem;
+}
+
+form h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    font-style: normal;
+}
+
+svg{
+    width: 3rem;
+}
+
+.span-error-login{
+    display: none;
+    color: red;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.align-photo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.div-align-inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.2rem;
+}
+
+.div-align-remember{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.div-align-remember p{
+    font-size: 14px;
+}
+
+.spansAll{
+    color: blue;
+    cursor: pointer;
+}
+
+.spansAll:active{
+    color: rgb(1, 1, 146);
+}
+
+label{
+    margin-left: 0.2rem;
+    font-weight: bold;
+}
+
+.inpt-logins{
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 10px;
+
+    border: none;
+    outline-color: rgb(38, 38, 153);
+    padding-left: 0.5rem;
+    background-color: rgb(236, 231, 225);
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+.div-align-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.div-align-btn p{
+    font-size: 14px;
+}
+
+.btn-logins{
+    color: white;
+    background-color: rgb(55, 55, 173);
+    border: none;
+    border-radius: 8px;
+  
+    font-size: 15px;
+    width: 13rem;
+    height: 2.5rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+  
+.btn-logins:active{
+    color: rgb(173, 173, 173);
+    background-color: rgb(34, 34, 105);
+    transform: scale(0.9);
+}
