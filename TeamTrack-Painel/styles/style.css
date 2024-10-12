@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  background: linear-gradient(0deg, rgb(108, 116, 156) 0%, rgb(83, 102, 128) 100%);
+  background-repeat: no-repeat;
+}
+
+.div-all{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: rgb(255, 255, 255);
+  width: 100rem;
+  height: 55rem;
+  border-radius: 15px;
+  gap: 2.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.div-header{
+  width: 94rem;
+  padding-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.align-photo{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+svg{
+  width: 3.5rem;
+}
+
+.div-header h1{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  font-style: normal;
+}
+
+#btn-submit-add{
+  color: white;
+  background-color: rgb(55, 55, 173);
+  border: none;
+  border-radius: 8px;
+
+  font-size: 15px;
+  width: 8rem;
+  height: 2.5rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#btn-submit-add:hover{
+  transform: scale(1.05);
+}
+
+#btn-submit-add:active{
+  color: rgb(173, 173, 173);
+  background-color: rgb(34, 34, 105);
+}
+
+.div-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+
+  width: 97rem;
+}
+
+table {
+  width: 100%;
+  border-spacing: 10px;
+  word-break: break-all;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+thead {
+  background-color: rgb(233, 230, 227);
+  height: 3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+tr {
+  border-bottom: 1px solid rgb(238, 235, 235)!important;
+}
+
+tbody tr td {
+  vertical-align: text-top;
+  padding: 6px;
+  max-width: 50px;
+  font-size: 16px;
+}
+
+thead tr th {
+  padding: 5px;
+  margin-bottom: 1re;
+  width: 100rem;
+}
+
+tbody tr {
+  margin-bottom: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ===== Design Modal ====== */
+
+#div-modal-all{
+  height: 100%;
+
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  animation: modal .4s;
+}
+
+.div-modal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 28rem;
+  border-radius: 20px;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.div-modal h1{ 
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  font-style: normal;
+  margin-top: 2rem;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.div-align-inputs{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.2rem;
+}
+
+.div-align-inputs input{
+  width: 20rem;
+  height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(236, 231, 225);
+}
+
+.div-align-inputs label{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.div-align-span{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div-align-span span{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#btn-modal-submit{
+  color: white;
+  background-color: rgb(55, 55, 173);
+  border: none;
+  border-radius: 8px;
+
+  font-size: 15px;
+  width: 8rem;
+  height: 2.5rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#btn-modal-submit:hover{
+  transform: scale(1.05);
+}
+
+#btn-modal-submit:active{
+  color: rgb(173, 173, 173);
+  background-color: rgb(34, 34, 105);
+}
+
+#btn-modal-cancel{
+  color: white;
+  background-color: rgb(173, 55, 55);
+  border: none;
+  border-radius: 8px;
+
+  font-size: 15px;
+  width: 8rem;
+  height: 2.5rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#btn-modal-cancel:hover{
+  transform: scale(1.05);
+}
+
+#btn-modal-cancel:active{
+  color: rgb(173, 173, 173);
+  background-color: rgb(105, 34, 34);
+}
+
+#btn-update{
+  color: white;
+  background-color: rgb(55, 55, 173);
+  border: none;
+  border-radius: 8px;
+
+  font-size: 15px;
+  width: 8rem;
+  height: 2.5rem;
+  transition: 0.4s;  
+}
+
+#btn-update:hover{
+  transform: scale(1.05);
+}
+
+#btn-update:active{
+  color: rgb(173, 173, 173);
+  background-color: rgb(34, 34, 105);
+}
+
+.align-btns-modal{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.action{
+  background-color: transparent;
+  border: none;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+@keyframes modal{
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
