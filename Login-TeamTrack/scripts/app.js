@@ -135,7 +135,7 @@ function validatorInputLogin() {
         
         if (user) {
             if (user.password === password_const) {
-                window.location.href = "../Gestão_Funcionarios/index.html";
+                window.location.href = "../TeamTrack-Painel/index.html";
             } else {
                 error_span[0].style.display = 'block';
                 error_span[0].textContent = 'Senha incorreta';
